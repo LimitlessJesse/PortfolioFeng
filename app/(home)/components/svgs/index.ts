@@ -1,0 +1,1 @@
+export {default as QQMusicIcon} from './qqMusicIcon.svg'
