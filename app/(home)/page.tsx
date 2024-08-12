@@ -27,7 +27,7 @@ export default function page(){
             <HeroSection />
             
           </div>
-          <div className="max-w-7xl mx-auto mt-20"> 
+          <div className="max-w-7xl mx-auto mt-10"> 
             <Links />
           </div>
         </div>
