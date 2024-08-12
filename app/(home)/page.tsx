@@ -18,7 +18,7 @@ export default function page(){
           duration: 0.5,
           ease: "easeInOut",
         }}
-        className="relative flex flex-col gap-4 justify-center px-4"
+        className="relative flex flex-col gap-4 px-4"
       >
         <div className="min-h-screen">
           <div className="max-w-7xl mx-auto">
@@ -27,7 +27,7 @@ export default function page(){
             <HeroSection />
             
           </div>
-          <div className="max-w-7xl mx-auto items-center mt-20"> 
+          <div className="max-w-7xl mx-auto mt-20"> 
             <Links />
           </div>
         </div>
