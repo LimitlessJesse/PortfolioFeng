@@ -15,7 +15,7 @@ export default function page(){
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
           delay: 0.3,
-          duration: 0.8,
+          duration: 0.5,
           ease: "easeInOut",
         }}
         className="relative flex flex-col gap-4 justify-center px-4"
