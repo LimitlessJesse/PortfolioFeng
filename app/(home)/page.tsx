@@ -6,10 +6,11 @@ import HeroSection from "./components/HeroSection";
 import { AuroraBackground } from "./components/ui/aurora-backgroud";
 import { motion } from "framer-motion";
 import Links from "./components/Links";
+import { VideoBackground } from "./components/VideoBackground";
 
 export default function page(){
   return(
-    <AuroraBackground>
+    <VideoBackground>
       <motion.div
         initial={{ opacity: 0.0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -19,7 +20,7 @@ export default function page(){
           ease: "easeInOut",
         }}
         className="relative flex flex-col gap-4 px-4"
-      >
+      >      
         <div className="min-h-screen">
           <div className="max-w-7xl mx-auto">
             
@@ -32,7 +33,7 @@ export default function page(){
           </div>
         </div>
       </motion.div>
-    </AuroraBackground>
+    </VideoBackground>
 
   );
 }
