@@ -6,9 +6,10 @@ import HeroSection from "./components/HeroSection";
 import { AuroraBackground } from "./components/ui/aurora-backgroud";
 import { motion } from "framer-motion";
 import Links from "./components/Links";
+import Image from "next/image";
 
-export default function page(){
-  return(
+export default function page() {
+  return (
     <AuroraBackground>
       <motion.div
         initial={{ opacity: 0.0, y: 40 }}
@@ -20,17 +21,28 @@ export default function page(){
         }}
         className="relative flex flex-col gap-4 px-4"
       >
-        <div className="min-h-screen">
-          <div className="max-w-7xl mx-auto">
-            
-            <Navbar />
-            <HeroSection />
-            
-          </div>
-          <div className="max-w-7xl mx-auto mt-10"> 
-            <Links />
-          </div>
+
+
+        <div className="max-w-7xl mx-auto">
+
+          <Navbar />
+          <HeroSection />
+
         </div>
+
+
+        <nav className=" flex flex-col items-center mt-5">
+          <Image src="/images/bioImage.jpg"
+            className=""
+            alt="background image"
+            width="1280"
+            height="1570"
+            fill={false}
+            priority={true}
+            style={{ position: "absolute", zIndex: -1, }} />
+          <Links />
+        </nav>
+
       </motion.div>
     </AuroraBackground>
 
