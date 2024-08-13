@@ -37,8 +37,8 @@ export default function Links(){
   ]
 
   return (
-    <nav className=" flex flex-col items-center justify-center">
-      <h1 className="text-4xl font-bold underline underline-offset-8 decoration-purple-300">My Links</h1>
+    <nav className=" flex flex-col items-center mt-5">
+      <h1 className="text-4xl font-bold underline underline-offset-8 decoration-green-500">My Links</h1>
       <div className="">
         <HoverEffect items={links} />
       </div>
